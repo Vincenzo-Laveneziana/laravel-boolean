@@ -18,7 +18,7 @@
 
 @mixin reset-a {
   text-decoration: none;
-  color: $brown;
+  color: $boolean-blu;
 }
 
 @mixin color-a-nav-bar {
@@ -84,12 +84,12 @@ body {
 }
 
 main{
- height: 1500px;
+  height: 1500px;
 }
 
 .main-content {
   max-width: 1140px;
-  padding: 0 1rem 4rem;
+  padding: 100px 15px 0;
   margin: 0 auto;
 }
 

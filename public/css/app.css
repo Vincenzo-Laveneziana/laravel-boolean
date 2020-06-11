@@ -23,7 +23,7 @@ main {
 
 .main-content {
   max-width: 1140px;
-  padding: 0 1rem 4rem;
+  padding: 100px 15px 0;
   margin: 0 auto;
 }
 
@@ -36,7 +36,11 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 15px;
+  background: white;
 }
 
 .navbar a img {
@@ -107,6 +111,48 @@ main {
 /****************** 
   Main
 ******************/
+
+/****************** 
+  Main /students
+******************/
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.students {
+  padding: 0 25px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 50px;
+}
+
+.students .student {
+  text-decoration: none;
+  color: #1b3c59;
+  height: 250px;
+  background: white;
+  padding: 15px;
+  box-shadow: 5px 7px 14px 0 #b0b0b0;
+}
+
+.students .student .info {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.students .student .info img {
+  border-radius: 5px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.students .student .description {
+  margin-bottom: 20px;
+}
 
 /****************** 
   Footer

@@ -5,7 +5,7 @@
 To view the task click: <a href="Task.pdf">Here</a>
 
  ​ ​ :desktop_computer: Project Preview:
-<p align="center"><img src="assets/img/Cattura.GIF" width= "700px"></p>
+<p align="center"><img src="public/img/img.png" width= "700px"></p>
  ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ 
 
 
