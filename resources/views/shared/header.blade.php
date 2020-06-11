@@ -28,13 +28,13 @@
 
             <ul>
                 <li>
-                    <a href=" {{ route('static-page.home')}}">Home</a>
+                    <a @if (Request::route()->getName() == 'static-page.home') class="active" @endif href=" {{ route('static-page.home')}}">Home</a>
                 </li>
                 <li>
                     <a href=" {{ route('student.index')}}">Corso</a>
                 </li>
                 <li>
-                    <a href=" ">Dopo il corso</a>
+                    <a @if (Request::route()->getName() == 'student.index') class="active" @endif href=" ">Dopo il corso</a>
                 </li>
                 <li>
                     <a href=" ">Lezione gratuita</a>
