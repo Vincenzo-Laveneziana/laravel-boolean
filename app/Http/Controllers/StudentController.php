@@ -61,7 +61,7 @@ class StudentController extends Controller
     public function index() {
 
         $students = $this->students;
-
+        
         return view('students.index', compact('students'));
     }
 
@@ -70,7 +70,28 @@ class StudentController extends Controller
         Show deteils page students
     */
     public function show($id) {
-        return view('students.show');
+
+        $student = $this->searchStudents($id, $this->students);
+
+        if (!$student) {
+            abort(404);
+        }
+
+        return view('students.show', compact('student'));
+    }
+
+    /* 
+        Utilities
+    */
+    //check if student exists by id
+    private function searchStudents($id, $array) {
+        foreach ($array as $student){
+            if ($student['id'] == $id) {
+                return $student;
+            }
+        }
+
+        return false;
     }
 
 }

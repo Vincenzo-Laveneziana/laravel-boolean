@@ -7,10 +7,11 @@
         <h1>I nostri ex studenti su LinkedIn</h1>
         
        {{-- @dump($students) --}}
+     
 
        <div class="students">
            @foreach ($students as $student)
-                <a href="" class="student">
+                <a href="{{ route('student.show', ['id' => $student['id']]   ) }}" class="student">
                     <div class="info">
                         <img src="{{ $student['img'] }}" alt="">
 

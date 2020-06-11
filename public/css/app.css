@@ -154,6 +154,31 @@ h1 {
   margin-bottom: 20px;
 }
 
+.student2 {
+  text-decoration: none;
+  color: #1b3c59;
+  margin-top: 100px;
+  height: 250px;
+  background: white;
+  padding: 15px;
+  box-shadow: 5px 7px 14px 0 #b0b0b0;
+}
+
+.student2 .info {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.student2 .info img {
+  border-radius: 5px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.student2 .description {
+  margin-bottom: 20px;
+}
+
 /****************** 
   Footer
 ******************/

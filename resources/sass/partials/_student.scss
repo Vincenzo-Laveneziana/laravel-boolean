@@ -36,6 +36,28 @@ h1{
       margin-bottom: 20px;
     }
   }
+}
 
+.student2{
+  @include reset-a;
+  margin-top: 100px;
+  height: 250px ;
+  background: white;
+  padding: 15px;
+  box-shadow: 5px 7px 14px 0 #b0b0b0;
   
+  .info{
+    display: flex;
+    margin-bottom: 30px;
+    
+    img{
+      border-radius: 5px;
+      width: 100px;
+      margin-right: 20px;
+    }
+  }
+
+  .description{
+    margin-bottom: 20px;
+  }
 }
