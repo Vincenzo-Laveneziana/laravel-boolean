@@ -1,0 +1,113 @@
+/****************** 
+  Vars
+******************/
+
+/****************** 
+  Common Style
+******************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0 auto;
+}
+
+main {
+  height: 1500px;
+}
+
+.main-content {
+  max-width: 1140px;
+  padding: 0 1rem 4rem;
+  margin: 0 auto;
+}
+
+/****************** 
+  Header
+******************/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar a img {
+  width: 200px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #1b3c59;
+}
+
+.navbar ul li.active,
+.navbar ul li:hover {
+  border-bottom-color: #73D462;
+}
+
+.navbar ul li:last-child {
+  border-bottom-color: transparent;
+}
+
+.navbar ul li:last-child a {
+  padding: 12px 20px;
+  border-radius: 7px;
+  background-color: #73D462;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  /* 
+  small
+  */
+}
+
+@media (min-width: 768px) {
+  /* 
+  mediun
+  */
+}
+
+@media (min-width: 992px) {
+  /* 
+  large
+  */
+}
+
+@media (min-width: 1200px) {
+  /* 
+  extra large
+  */
+}
+
+/****************** 
+  Main
+******************/
+
+/****************** 
+  Footer
+******************/
+

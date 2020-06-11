@@ -1,0 +1,117 @@
+/****************** 
+  Common Style
+******************/
+
+
+//Mixins
+
+@mixin flex-center-center($direction: row, $justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin reset-list {
+  list-style: none;
+}
+
+@mixin reset-a {
+  text-decoration: none;
+  color: $brown;
+}
+
+@mixin color-a-nav-bar {
+  color: $brown;
+  font-weight: bold;
+  text-decoration: $none;
+
+  &:hover {
+    color:#30488f;
+  }
+}
+
+@mixin btn{
+  padding: 12px 20px;
+  border-radius: 7px;
+  background-color: $boolean-green;
+  color: $white;
+  cursor: pointer;
+}
+
+@mixin btn-jumbotron {
+  padding: 7px 10px;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  color: $white;
+  font-size: 15px;
+  cursor: pointer;
+  background:#30488f;
+}
+
+@mixin after-before($none: none, $value: 0){
+  content: '';
+  position: absolute;
+  top: $none;
+  bottom: $value;
+}
+
+@mixin setting-p($align: center, $max-width: 500px, $top-bottom:20px, $r-f: 0,$font-size: 17px) {
+  text-align: $align;
+  max-width: $max-width;
+  margin: $top-bottom $r-f;
+  font-size: $font-size;
+}
+
+@mixin setting-a($margin-bottom: 40px, $font-size: 17px, $color:#30488f ) {
+  margin-bottom: $margin-bottom;
+  font-size: $font-size;
+  color:$color;
+}
+
+
+//General Rules
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $rubik-sans;
+  margin: 0 auto;
+}
+
+main{
+ height: 1500px;
+}
+
+.main-content {
+  max-width: 1140px;
+  padding: 0 1rem 4rem;
+  margin: 0 auto;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
