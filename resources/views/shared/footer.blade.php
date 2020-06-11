@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <nav class="nav-footer">
-        <div>
+        <div class="info">
             <div class="footer-brand">
                 <img src="https://www.boolean.careers/images/common/logo-white.png" alt="Logo">
                 <span>Sede Operativa</span>
