@@ -11,12 +11,12 @@
 
        <div class="students">
            @foreach ($students as $student)
-                <a href="{{ route('student.show', ['id' => $student['id']]   ) }}" class="student">
+                <a href="{{ route('student.show', ['slug' => $student['slug']]   ) }}" class="student">
                     <div class="info">
                         <img src="{{ $student['img'] }}" alt="">
 
                         <div class="info-person">
-                            <h3>{{$student['nome']}}  ({{$student['eta']}}anni)</h3>
+                            <h3>{{$student['nome']}}  ({{$student['eta']}} anni)</h3>
                             <p>Assunt{{($student['genere'] == 'm') ? 'o' : 'a'}} da {{$student['azienda']}} come {{$student['ruolo']}} </p>
                         </div>
                     </div>

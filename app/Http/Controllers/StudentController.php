@@ -15,6 +15,7 @@ class StudentController extends Controller
                 'id' => 1,
                 'img' => 'https://www.boolean.careers/images/students/biagini.png',
                 'nome' => 'Alessandro Biagini',
+                'slug' => 'alessandro-biagini',
                 'eta' => 25,
                 'genere' => 'm',
                 'azienda' => 'DISC SPA',
@@ -24,7 +25,8 @@ class StudentController extends Controller
             [
                 'id' => 2,
                 'img' => 'https://www.boolean.careers/images/students/poggini.png',
-                'nome' => 'Paolo Poggini',
+                'nome' => 'Paola Poggini',
+                'slug' => 'paola-poggini',
                 'eta' => 24,
                 'genere' => 'f',
                 'azienda' => 'Prima Assicurazioni',
@@ -35,6 +37,7 @@ class StudentController extends Controller
                 'id' => 3,
                 'img' => 'https://www.boolean.careers/images/students/masetti.png',
                 'nome' => 'Loana Masetti',
+                'slug' => 'loana-masetti',
                 'eta' => 36,
                 'genere' => 'f',
                 'azienda' => 'The Zen Agency',
@@ -46,6 +49,7 @@ class StudentController extends Controller
                 'id' => 4,
                 'img' => 'https://www.boolean.careers/images/students/patruno.png',
                 'nome' => 'Davide Patruno',
+                'slug' => 'davide-patruno',
                 'eta' => 29,
                 'genere' => 'm',
                 'azienda' => 'ArmadioVerde',
@@ -69,9 +73,9 @@ class StudentController extends Controller
     /* 
         Show deteils page students
     */
-    public function show($id) {
+    public function show($slug) {
 
-        $student = $this->searchStudents($id, $this->students);
+        $student = $this->searchStudents($slug, $this->students);
 
         if (!$student) {
             abort(404);
@@ -84,9 +88,9 @@ class StudentController extends Controller
         Utilities
     */
     //check if student exists by id
-    private function searchStudents($id, $array) {
+    private function searchStudents($slug, $array) {
         foreach ($array as $student){
-            if ($student['id'] == $id) {
+            if ($student['slug'] == $slug) {
                 return $student;
             }
         }
