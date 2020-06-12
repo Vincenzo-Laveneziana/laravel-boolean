@@ -22,5 +22,9 @@
     </nav>
 </footer>
 
+
+{{-- Jquery --}}
+<script src="{{ asset('js/app.js') }}"></script>
+
 </body>
 </html>

@@ -7,7 +7,18 @@
         <h1>I nostri ex studenti su LinkedIn</h1>
         
        {{-- @dump($students) --}}
-     
+        
+        <div class="students-filter">
+            {{-- @dump($genders) --}}
+            <select name="filter" id="filter">
+                @foreach($genders as $gender)
+                    <option value="{{ $gender }}"> 
+                        @if($gender == 'm') Uomo @elseif($gender == 'f') Donna @else Tutti @endif
+                    </option>
+                @endforeach
+            </select>
+        </div>
+
 
        <div class="students">
            @foreach ($students as $student)
