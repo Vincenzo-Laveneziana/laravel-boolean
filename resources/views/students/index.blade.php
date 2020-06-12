@@ -40,7 +40,7 @@
 
        </div>
 
-       @include('shared.handlebars.student')   
+          
 
     </main>
 

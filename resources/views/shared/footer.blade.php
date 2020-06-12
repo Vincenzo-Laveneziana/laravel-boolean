@@ -22,6 +22,7 @@
     </nav>
 </footer>
 
+@include('shared.handlebars.student')
 
 {{-- Jquery --}}
 <script src="{{ asset('js/app.js') }}"></script>
